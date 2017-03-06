@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.waynian.playervsmusic.ui.MainActivity">
+
+    <include layout="@layout/title_bar"/>
+    <!--标题栏-->
+
+    <!---->
+    <FrameLayout
+        android:id="@+id/fl_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <!-- RadioGroup-->
+
+    <RadioGroup
+        android:id="@+id/rg_bottom_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:padding="3dp"
+        android:background="#11000000"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb"
+            style="@style/rb_bg"
+            android:drawableTop="@drawable/rb_video_drawable_selector"
+            android:text="本地视频"
+            />
+
+        <RadioButton
+            android:id="@+id/rb1"
+            style="@style/rb_bg"
+            android:drawableTop="@drawable/rb_audio_drawable_selector"
+            android:text="音乐" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            style="@style/rb_bg"
+            android:drawableTop="@drawable/rb_net_audio_drawable_selector"
+            android:text="网络视频" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            style="@style/rb_bg"
+            android:drawableTop="@drawable/rb_net_video_drawable_selector"
+            android:text="网络音乐" />
+
+    </RadioGroup>
+</LinearLayout>
